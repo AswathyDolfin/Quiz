@@ -56,12 +56,12 @@ function QuestionCard({
             </button>
             <button
               onClick={onNextQuestion}
+              disabled={currentQuestionIndex === totalQuestions-1}
               className="nav-button"
             >
               Next
             </button>
           </div>
-          {selectedOption !== null && (
             <div className="explanation">
               <button
                 onClick={onShowExplanation}
@@ -72,7 +72,7 @@ function QuestionCard({
               </button>
               {showExplanation && (<p>{question.explanation}</p>)}
             </div>
-          )}
+          
         </div>
         <div className="bar">
           <div className='title2'>
