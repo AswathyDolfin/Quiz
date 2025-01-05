@@ -11,5 +11,5 @@ app.use(express.json())
 connectDB()
 app.use('/api', questionRoutes)
 app.listen(port, () => {
-  console.log(`server running at port,${port}`);
+  console.log(`server running at port,${port}`)
 })

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import QuestionCard from './QuestionCard';
-import '../style/Quizapp.css';
+import React, { useState, useEffect } from 'react'
+import QuestionCard from './QuestionCard'
+import '../style/Quizapp.css'
 
 function MainQuizApp() {
   const [questions, setQuestions] = useState([]);
@@ -17,29 +17,29 @@ function MainQuizApp() {
   const handleOptionSelect = (optionIndex) => {
     setSelectedOption(optionIndex);
     setAttendedQuestions((prev) => new Set(prev).add(currentQuestionIndex));
-  };
+  }
 
   const handleShowExplanation = () => {
-    setShowExplanation(true);
-  };
+    setShowExplanation(true)
+  }
 
   const handleNextQuestion = () => {
-    setShowExplanation(false);
-    setSelectedOption(null);
-    setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
+    setShowExplanation(false)
+    setSelectedOption(null)
+    setCurrentQuestionIndex((prevIndex) => prevIndex + 1)
   };
 
   const handlePrevQuestion = () => {
-    setShowExplanation(false);
-    setSelectedOption(null);
-    setCurrentQuestionIndex((prevIndex) => Math.max(prevIndex - 1, 0));
-    
+    setShowExplanation(false)
+    setSelectedOption(null)
+    setCurrentQuestionIndex((prevIndex) => Math.max(prevIndex - 1, 0))
+
   };
 
   const handleQuestionSelect = (index) => {
-    setShowExplanation(false);
-    setSelectedOption(null);
-    setCurrentQuestionIndex(index);
+    setShowExplanation(false)
+    setSelectedOption(null)
+    setCurrentQuestionIndex(index)
   };
   return (
     <div className="App">
@@ -67,4 +67,4 @@ function MainQuizApp() {
   );
 }
 
-export default MainQuizApp;
+export default MainQuizApp

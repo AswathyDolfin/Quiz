@@ -1,114 +1,117 @@
+.question-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 1300px;
+  text-align: left;
+}
 
-   .question-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 1300px;
-    text-align: left;
-  }
-  
-  .question-title {
-    font-size: 18px;
-    color: #333;
-    text-align: center;
-  }
-  
-  .question-text {
-    font-size: 16px;
-    margin: 10px 0;
-  }
-  
-  .options {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-  }
-  
-  .option {
-    background: white;
-    border: 0px  ;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    text-align: left;
-  }
-  
-  .option.selected {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .option.correct {
-    background-color: #28a745;
-    color: white;
-  }
-  
-  .option.incorrect {
-    background-color: #dc3545;
-    color: white;
-  }
-  
-  .explanation {
-    margin-top: 15px;
-    padding: 10px;
-    background: #f8f9fa;
-    border-left: 5px ;
-    font-size: 14px;
-    color: #333;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navigation-buttons {
-    display: flex;
-    gap: 60px;
-    margin-top: 20px;
-    text-align: center;
-    margin-left: 400px;
-  }
-  
-  .nav-button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    background-color:white;
-    color: black;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .nav-button:disabled {
-   
-    cursor: not-allowed;
-  }
-.title{
+.question-title {
+  font-size: 18px;
+  color: #333;
   text-align: center;
-}  
+}
 
-.question{
+.question-text {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.option {
+  background: white;
+  border: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  ;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: left;
+}
+
+.option.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.option.correct {
+  background-color: #28a745;
+  color: white;
+}
+
+.option.incorrect {
+  background-color: #dc3545;
+  color: white;
+}
+
+.explanation {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-left: 5px;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 60px;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 400px;
+}
+
+.nav-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+.nav-button:disabled {
+
+  cursor: not-allowed;
+}
+
+.title {
+  text-align: center;
+}
+
+.question {
   border: 2px solid rgb(47, 72, 235);
   border-radius: 10px;
   padding: 10px;
 }
 
-.card{
+.card {
   display: flex;
   gap: 30px;
 }
-.sidebar1{
+
+.sidebar1 {
   width: 1000px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
 }
+
 .sidebar2 {
   width: 300px;
   gap: 10px;
@@ -118,11 +121,12 @@
   height: fit-content;
   row-gap: 50px;
 }
-.sidebar-button{
+
+.sidebar-button {
   border-radius: 50%;
   height: 40px;
   width: 40px;
-  width:  calc((100% / 5) - 10px);  /* Adjust to display 5 items per row with some spacing */
+  width: calc((100% / 5) - 10px);
   row-gap: 10px;
   padding: 10px;
   background-color: white;
@@ -131,23 +135,25 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
- .bar{
+
+.bar {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
- }
+}
 
- .title{
+.title {
   padding: 20px;
- }
+}
 
- .right-text {
+.right-text {
   margin-left: 240px;
   margin-top: -38px;
- }
+}
 
- .left-text {
+.left-text {
   margin-left: 5px;
- }
- .sidebar-button.attended {
+}
+
+.sidebar-button.attended {
   background-color: #007bff;
   color: white;
 }
